@@ -45,3 +45,15 @@ a {
   line-height: 30px;
   max-width: 367px;
 }
+.input {
+  width: 277px;
+  height: 60px;
+  background: transparent;
+  border: 2px solid #fff;
+  border-radius: 30px;
+  padding-left: 28px;
+  box-sizing: border-box;
+}
+.input::placeholder {
+  color: #fff;
+}
