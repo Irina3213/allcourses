@@ -33,4 +33,15 @@ a {
   margin-right: 21px;
 }
 .title {
+  font-weight: 800;
+  font-size: 58px;
+  line-height: 80px;
+  max-width: 600px;
+  margin-bottom: 35px;
+}
+.text {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  max-width: 367px;
 }
