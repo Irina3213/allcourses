@@ -32,3 +32,5 @@ a {
 .header__li:not(:last-of-type) {
   margin-right: 21px;
 }
+.title {
+}
