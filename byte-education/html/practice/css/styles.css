@@ -5,3 +5,22 @@ body{
     max-width: 1440px;
     margin: 0 auto;
 }
+.header{
+    padding: 40px 0;
+}
+
+.header-li{
+    display: inline-block;
+    margin-right: 20px;
+	
+}
+.header-li >a {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    text-decoration: none;
+
+}
+.header-ul{
+ text-align: center;
+}
