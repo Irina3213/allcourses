@@ -44,6 +44,7 @@ a {
   font-size: 20px;
   line-height: 30px;
   max-width: 367px;
+  margin-bottom: 42px;
 }
 .input {
   width: 277px;
@@ -56,4 +57,12 @@ a {
 }
 .input::placeholder {
   color: #fff;
+}
+.button{
+  width: 186px;
+  height: 60px;
+  background-color: #23A6F0;
+  border-radius: 30px;
+  border: none;
+  margin-left: 22px;
 }
