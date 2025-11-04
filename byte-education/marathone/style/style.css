@@ -19,6 +19,8 @@ a {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
+  padding-bottom: 67px;
+  
 }
 .header {
   padding: 30px 0 134px;
@@ -65,4 +67,45 @@ a {
   border-radius: 30px;
   border: none;
   margin-left: 22px;
+}
+.industry-top{
+  text-align: center;
+}
+.industry-text{
+  max-width: 470px;
+  margin: 0 auto;
+}
+.industry{
+  background-color: #252B42;
+  padding: 112px 0;
+}
+.gallery{
+  display: flex;
+  justify-content: space-around;
+}
+.gallery-text{
+  max-width: 237px;
+  font-size: 20px;
+  line-height: 39px;
+  margin-bottom: 15px;
+}
+.gallery-btn{
+  width: 165px;
+  height: 42px;
+  border-radius: 21px;
+  border: none;
+  background-color: #23A6F0;
+}
+.gallery__item{
+  position: relative;
+}
+.gallery__item:hover > .gallery__item-abs{
+  opacity: 1;
+  transition: all 1s;
+}
+.gallery__item-abs{
+  position: absolute;
+  bottom: 37px;
+  left: 20px;
+  opacity: 0;
 }
