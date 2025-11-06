@@ -1,0 +1,41 @@
+.container{
+    border: 5px solid brown;
+    width: 50%;
+    height: 500px;
+    position: relative;
+    left: 50px;
+    top: 20px;
+}
+.item1{
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    border-radius: 50%;
+    position: absolute;
+    right: 30px;
+    bottom: 20px;
+}
+.item2{
+    width: 50px;
+    height: 50px;
+    background-color: green;
+    border-radius: 50%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.item3{
+    width: 50px;
+    height: 50px;
+    background-color: rgb(255, 0, 251);
+    border-radius: 50%;
+    position: sticky;
+    top: 30px;
+}
+.item4{
+    width: 50px;
+    height: 50px;
+    background-color: rgb(255, 242, 0);
+    border-radius: 50%;
+}
