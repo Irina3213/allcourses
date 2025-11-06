@@ -78,6 +78,11 @@ a {
 .gallery__item {
   position: relative;
 }
+.gallery__item:hover .gallery__item-abs {
+  display: flex;
+  cursor: pointer;
+}
+
 .gallery__item-abs {
   position: absolute;
   background: rgba(35, 35, 35, 0.58);
@@ -86,7 +91,7 @@ a {
   left: 0;
   right: 0;
   bottom: 0;
-  display: flex;
+  display: none;
   align-items: center;
   flex-direction: column;
   justify-content: center;
