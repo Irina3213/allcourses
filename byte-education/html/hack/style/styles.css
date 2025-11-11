@@ -47,6 +47,11 @@
   color: #ffffff;
   background-color: #fb8f1d;
 }
+.button__container > button:first-of-type:hover{
+  color: #ffffff;
+  background: #fb8f1d;
+  transition: 1s;
+}
 .title{
   font-weight: 700;
   font-size: 48px;
@@ -109,4 +114,6 @@
 }
 .section{
   display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
 }
