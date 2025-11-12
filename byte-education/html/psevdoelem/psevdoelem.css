@@ -1,0 +1,24 @@
+.container{
+    max-width: 50%;
+    margin: 200px auto;
+    text-align: center;
+}
+.text{
+    position: relative;
+}
+.text::before{
+    content: '"';
+    position: absolute;
+    left: -150px;
+    top: -200px;
+    font-size: 78px;
+    transform: rotate(180deg);
+}
+.text::after{
+    content: url(https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.vecteezy.com%2Ffree-photos&psig=AOvVaw1nQgZKTOKWxDZqT3hXOlet&ust=1762974746250000&source=images&cd=vfe&opi=89978449&ved=0CBUQjRxqFwoTCJir6Ozm6pADFQAAAAAdAAAAABAE);
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: blueviolet;
+    right: -50px;
+}
