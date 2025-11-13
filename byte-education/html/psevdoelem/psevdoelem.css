@@ -22,3 +22,79 @@
     background-color: blueviolet;
     right: -50px;
 }
+
+/*psevdoelementi*/
+.box{
+    width: 100px;
+    height: 100px;
+    background: #f4f;
+}
+.box:hover{
+    background: red;
+    transition: 200ms;
+}
+.link:hover{
+    color: blue;
+    font-size: 30px;
+}
+.link:visited{
+    color: black;
+}
+.link:active{
+    color: greenyellow;
+}
+.input{
+    width: 330px;
+    padding: 20px;
+}
+.input:focus{
+    outline-color: rgb(237, 151, 13);
+}
+.input::placeholder{
+    font-size: 30px;
+    color: grey;
+}
+li{
+    display: inline-block;
+    position: relative;
+}
+li:not(:first-child){
+    margin-left: 20px;
+}
+li:nth-child(2n+1){
+    color: brown;
+}
+/*psevdoelem*/
+li:nth-child(2n){
+    text-decoration: underline;
+}
+li::after{
+    content: '';
+    width:100%;
+    position: absolute;
+    height: 1px;
+    background-color: #949beb;
+}
+li::before{
+    content: '';
+    width:100%;
+    position: absolute;
+    height: 1px;
+    background-color: #a73a7a;
+}
+li:hover::before{
+    content: '';
+    width:100%;
+    position: absolute;
+    height: 1px;
+    background-color: #a0e87e;
+    bottom:0;
+}
+li:hover::after{
+    content: '';
+    width:100%;
+    position: absolute;
+    height: 1px;
+    background-color: #a0e87e;
+    left: 0;
+}
