@@ -1,0 +1,11 @@
+.container {
+  max-width: 1090px;
+  margin: 0 auto;
+}
+.header-link {
+  text-decoration: none;
+  display: inline-block;
+}
+.header-items {
+  display: flex;
+}
