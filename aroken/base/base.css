@@ -1,0 +1,7 @@
+body {
+  background-color: #dddfc2;
+}
+.parent {
+  color: red;
+  border: 1px solid green;
+}
