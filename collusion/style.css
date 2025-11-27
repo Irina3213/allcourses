@@ -7,7 +7,7 @@
 }
 body {
   color: #22262a;
-  font: 400 15px/22px "Pppins", Arial, Helvetica, sans-serif;
+  font: 400 15px/22px "Popins", Arial, Helvetica, sans-serif;
 }
 a {
   color: inherit;
@@ -22,4 +22,84 @@ ul li {
 }
 button {
   display: block;
+  border: none;
+  font: inherit;
+  background-color: transparent;
+  cursor: pointer;
+  transition: 0.4s;
+}
+.container {
+  max-width: 1140px;
+  padding: 0 5px;
+  margin: 0 auto;
+}
+.btn-primary {
+  padding: 4px 24px;
+  background-color: #22262a;
+  color: #fff;
+  font-weight: 500;
+  font-size: 18px;
+}
+.btn-primary:hover {
+  background-color: #df51c9;
+}
+/*header*/
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+.header__logo {
+  font-size: 28px;
+  line-height: 42px;
+}
+.header__nav-item {
+  display: inline-block;
+  font-size: 18px;
+  margin-right: 20px;
+}
+.header__nav-item:last-child {
+  margin-right: 0;
+}
+.header-user__item {
+  display: inline-block;
+  margin-right: 30px;
+}
+.header-user__item:last-child {
+  margin-right: 0;
+}
+.header a:hover,
+.header button:hover {
+  color: #df51c9;
+}
+/*Banner*/
+.banner-wrap {
+  padding: 425px 0 100px;
+  background: url("./images/bg.jpg") no-repeat;
+  background-size: cover;
+}
+
+.banner {
+  width: 460px;
+  margin-left: auto;
+}
+.banner__text {
+  display: block;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 27px;
+}
+.banner__trend {
+  font-size: 80px;
+  line-height: 120px;
+}
+.banner-link-wrap {
+  margin-top: 25px;
+}
+.banner__link {
+  width: 150px;
+  padding: 5px 0;
+}
+.btn-primary {
 }
