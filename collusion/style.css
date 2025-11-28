@@ -114,12 +114,141 @@ button {
   grid-template-areas:
     "img1 img1 img4 img4"
     "img2 img3 img4 img4";
+  gap: 25px;
 }
 .category__link {
-  min-height: 265px;
+  position: relative;
+  min-height: 285px;
+  cursor: pointer;
+}
+.category__link:hover::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0 0 0 /50%);
 }
 .category__link:nth-child(1) {
-  background: url(images/catagory/1.jpg) no-repeat;
+  grid-area: img1;
+  background: url(images/catagory/1.jpg) 50% 0% / cover no-repeat;
+}
+.category__link:nth-child(2) {
+  grid-area: img2;
+  background: url(images/catagory/2.jpg) 50% 0% / cover no-repeat;
+}
+.category__link:nth-child(3) {
+  grid-area: img3;
+  background: url(images/catagory/3.jpg) 50% 0% / cover no-repeat;
+}
+.category__link:nth-child(4) {
+  grid-area: img4;
+  background: url(images/catagory/4.jpg) 0% / cover no-repeat;
 }
 .category__name {
+  position: absolute;
+  bottom: 25px;
+  left: 25px;
+  padding: 5px 20px;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 27px;
+  background-color: #fff;
+  opacity: 0;
+}
+.category__link:hover .category__name {
+  opacity: 1;
+}
+/*new products*/
+.section {
+}
+.section__title {
+  margin-bottom: 15px;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+}
+.fashion__subtitle {
+  margin-bottom: 65px;
+  text-align: center;
+}
+.new-product-wrap {
+  display: flex;
+  justify-content: space-between;
+}
+.new-product {
+  width: 24%;
+}
+.new-product__img {
+  margin-bottom: 38px;
+}
+.new-product__brand {
+  display: block;
+  font-weight: 300;
+}
+.new-product__link {
+  display: block;
+  font-weight: 600;
+  margin: 3px 0;
+}
+.new-product__link:hover {
+  color: #df51c9;
+}
+.new-product__price-old {
+  margin-right: 30px;
+  text-decoration: line-through;
+}
+.new-product__price-new {
+  color: #d43838;
+}
+/*style*/
+.style {
+  display: flex;
+  justify-content: space-between;
+  height: 700px;
+}
+.style-left {
+  width: 49%;
+  height: 100%;
+  background: url(./images/avonestyle/1.jpg) 50% 100%/550px no-repeat;
+}
+.style-right {
+  position: relative;
+  width: 49%;
+  height: 100%;
+  background: url(./images/avonestyle/2.jpg) 0% 0/515px no-repeat;
+}
+.style-right::after {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  right: 0;
+  width: 252px;
+  height: 303px;
+  background: #fff url(./images/avonestyle/3.jpg) 50% 100%/227px 281px no-repeat;
+}
+
+.style__link {
+  position: absolute;
+  z-index: 2;
+  right: 260px;
+  bottom: 50px;
+}
+.style__link:hover {
+  color: #df51c9;
+  cursor: pointer;
+}
+.style__link::after {
+  position: absolute;
+  content: "";
+  bottom: -5px;
+  right: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #22262a;
+  transition: 0.4s;
+}
+.style__link:hover::after {
+  background-color: #df51c9;
 }
