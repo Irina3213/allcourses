@@ -252,3 +252,17 @@ button {
 .style__link:hover::after {
   background-color: #df51c9;
 }
+/*collection*/
+.collection-wrap {
+  background: url(./images/tachen.jpg) no-repeat;
+  background-size: cover;
+  margin-top: 115px;
+}
+.collection {
+  margin-left: 0;
+  margin-right: auto;
+}
+.collection .banner__link {
+  width: 100%;
+  margin-top: 10px;
+}
