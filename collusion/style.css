@@ -99,7 +99,27 @@ button {
 }
 .banner__link {
   width: 150px;
-  padding: 5px 0;
+  margin-right: 35px;
+  padding: 10px 25px;
 }
-.btn-primary {
+.banner__link:last-child {
+  margin-right: 0;
+}
+/*cATEGORY*/
+.section {
+  padding: 115px 0 0;
+}
+.category {
+  display: grid;
+  grid-template-areas:
+    "img1 img1 img4 img4"
+    "img2 img3 img4 img4";
+}
+.category__link {
+  min-height: 265px;
+}
+.category__link:nth-child(1) {
+  background: url(images/catagory/1.jpg) no-repeat;
+}
+.category__name {
 }
