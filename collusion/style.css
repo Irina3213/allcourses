@@ -277,8 +277,7 @@ button {
   display: flex;
   justify-content: space-between;
 }
-.footer-left {
-}
+
 .footer-title {
   font-size: 25px;
   line-height: 38px;
@@ -343,12 +342,7 @@ button {
 .social__link:hover svg {
   fill: #df51c9;
 }
-.social__link {
-}
-.footer-right {
-}
-.footer__title {
-}
+
 .footer-form {
   display: flex;
   justify-content: space-between;

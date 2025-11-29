@@ -1,7 +1,87 @@
-body {
+/* body {
   background-color: #dddfc2;
+}
+div {
+  color: yellow;
 }
 .parent {
   color: red;
   border: 1px solid green;
+}
+#id-block {
+  background-color: rgb(236, 193, 236);
+}
+.block {
+  background: url("../laptop.jpg");
+}
+.block {
+  color: red;
+}
+.block1,
+.block2,
+.block3 {
+  color: red;
+}
+div.blue-block {
+  color: blue;
+}
+div .blue-block {
+  color: blue;
+}
+div .orange {
+  color: orange;
+}
+.parent-1 > .child-1 {
+  color: orange;
+} */
+/* h1 {
+  color: blue;
+}
+.block {
+  color: aqua;
+}
+#block {
+  color: blanchedalmond;
+}
+h1 {
+  color: brown !important;
+} */
+/* h1.block{
+  color:chocolate;
+} */
+/*card*/
+/* .user-card__image {
+  width: 100px;
+  height: 100px;
+  background-color: #333;
+  border-radius: 50%;
+}
+user-card__desc--color-green {
+  color: green;
+} */
+.block {
+  width: 80px;
+  height: 80px;
+  background-color: #333;
+}
+.title {
+  color: #b2e98d;
+  font-family: serif;
+  font-size: 16px;
+  line-height: 22px;
+}
+.text {
+  font-size: 16px;
+  line-height: 18px;
+  font-style: italic;
+  font-weight: 600;
+}
+.line {
+  height: 2px;
+  width: 100%;
+}
+.text-2 {
+  text-align: left;
+  text-decoration: underline;
+  text-shadow: 2px 2px 5px #000;
 }
