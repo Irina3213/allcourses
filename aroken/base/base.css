@@ -81,7 +81,27 @@ user-card__desc--color-green {
   width: 100%;
 }
 .text-2 {
-  text-align: left;
-  text-decoration: underline;
+  text-align: right;
+  text-decoration: underline wavy;
   text-shadow: 2px 2px 5px #000;
+}
+hr {
+  height: 2px;
+  color: blue;
+}
+.text-3 {
+  text-transform: uppercase;
+}
+.text-4 {
+  text-transform: capitalize;
+}
+.text-5 {
+  text-indent: 50px;
+  letter-spacing: normal;
+}
+.text-6 {
+  word-spacing: 20px;
+}
+.text-7 {
+  white-space: pre;
 }
