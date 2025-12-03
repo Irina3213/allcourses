@@ -26,6 +26,11 @@ body {
     rgba(246.63, 93.76, 5.25, 1) 100%
   );
   color: #fff;
+  white-space: nowrap;
+  transition: 0.3s;
+}
+.button:hover {
+  transform: scale(1, 0.5);
 }
 /*header-top*/
 .header {
@@ -38,12 +43,12 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 20px 0;
 }
 .header__logo {
   margin-right: 60px;
 }
-.logo {
-}
+
 .header__nav {
   margin-right: auto;
 }
@@ -57,21 +62,47 @@ body {
   margin-right: 0;
 }
 .header__nav-link {
-  font-weight: 700;
+  white-space: nowrap;
   line-height: 160%;
   color: #424551;
 }
+.header__nav-link:hover {
+  color: #ff3f3a;
+}
 .header__btn-box {
-  display: flex;
-}
-.header__top-btn {
-}
-
-.header__user-nav {
   display: flex;
   align-items: center;
 }
+.header__top-btn {
+  margin-right: 36px;
+}
+
+/* .header__user-nav {
+  display: flex;
+  align-items: center;
+} */
+.header__user-nav {
+  position: relative;
+  padding-left: 28px;
+}
+.header__user-nav::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  background: url("../images/icons/user-icon.svg") no-repeat;
+  width: 20px;
+  height: 20px;
+  display: block;
+}
 .header__user-btn {
+  white-space: nowrap;
+  line-height: 1.6;
+  transition: all 0.5s;
+}
+.header__user-btn:hover {
+  color: #ff3f3a;
 }
 .header__body {
 }
