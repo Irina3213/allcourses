@@ -19,9 +19,9 @@ body {
 .tetris div {
   height: min(4vh, 7vw);
   width: min(4vh, 7vw);
-  background-color: rgba(182, 166, 178, 0.4);
+  background-color: rgba(247, 230, 243, 0.4);
   border-radius: 0.3vh;
-  box-shadow: inset 2px 2px 2px grey, inset -2px -2px 2px blue;
+  box-shadow: inset 2px 2px 2px grey, inset -2px -2px 2px rgb(143, 143, 240);
 }
 .tetris .O {
   background-color: #ef81c0;

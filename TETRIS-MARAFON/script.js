@@ -56,15 +56,15 @@ function generatePlayField() {
     document.querySelector(".tetris").append(div);
   }
 
-  // playfield = new Array(PLAYFIELD_ROWS)
-  //   .fill()
-  //   .map(() => new Array(PLAYFIELD_COLUMNS).fill(0));
+  playfield = new Array(PLAYFIELD_ROWS)
+    .fill()
+    .map(() => new Array(PLAYFIELD_COLUMNS).fill(0));
   // console.table(playfield);
 }
 
 function generateTetromino() {
-  const nameTetro = TETROMINO_NAMES[1];
-  const matrix = TETROMINOES[1];
+  const nameTetro = TETROMINO_NAMES[0];
+  const matrix = TETROMINOES[0];
 
   const columnTetro = 4;
   const rowTetro = 5;
@@ -104,8 +104,11 @@ generateTetromino();
 // const cells = document.querySelectorAll(".grid div");
 
 function drawPlayField() {
+  playfield[7][6] = "O";
   for (let row = 0; row < PLAYFIELD_ROWS; row++) {
     for (let column = 0; column < PLAYFIELD_COLUMNS; column++) {
+      if (!playfield[row][column]) continue;
+
       const nameFigure = "O";
 
       const cellIndex = convertPositionToIndex(row, column);
