@@ -16,12 +16,28 @@ class Product {
 }
 
 class Cart {
-    constructor(){
-        this.products = [];
-    }
+    #products = [];
+    constructor(){}
+
     addProduct(...product) {
-        this.products.push(...product);
-        log(this.products)
+        this.#products.push(...product);
+        // log(this.products)
+        product.forEach(product => log(`${product.name} add to box`));
+    }
+
+    removeProduct(productName) {
+        this.#products = this.#products.filter((product) => product.name !== productName);
+        
+        return productName;
+    }
+
+    getTotalPrice() {
+        const totalPrice = this.#products.reduce((total, product) => total + product.price, 0);
+        return totalPrice;
+    }
+
+    get listOfProducts(){
+        return this.#products;
     }
 }
 
@@ -33,3 +49,14 @@ const milk = new Product("Milk", 60);
 
 cart.addProduct(bread, apple, milk);
 log(cart.products);
+
+
+const removedProduct = cart.removeProduct("Milk");
+log(`${removedProduct} deleted from box`);
+
+cart.removeProduct("Milk");
+log(cart.listOfProducts);
+
+// get(totalPrice);
+log(`Summa products into box: ${totalPrice}`);  
+cart.getTotalPrice()
