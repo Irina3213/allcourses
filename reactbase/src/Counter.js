@@ -51,9 +51,10 @@ const Counter = () => {
         //         Increment
         //     </button>
         // </Fragment>
-        <CounterView
-         counterValue={counter} 
-         onIncrement={onIncrementHandler}
+        <InteractiveView
+            value={counter}
+            onAction={onIncrementHandler} 
+            actionText="Increment"
         />
     );
 };
