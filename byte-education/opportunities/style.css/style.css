@@ -60,16 +60,24 @@ input,
   border: none;
   margin-bottom: 79px;
 }
-.point {
-  background-image: url("../img/media-bg-cover1.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+.point {  
   max-width: 512px;
   width: 100%;
   box-sizing: border-box;
   padding: 39px 0 56px 72px;
   position: relative;
+}
+.point-1{
+  background-image: url("../img/bitmap.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.point-2{
+  background-image: url("../img/bitmap-2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 .point-pretitle {
   font-size: 14px;
@@ -80,6 +88,7 @@ input,
 }
 .point-line {
   width: 56px;
+  border: none;
   background-color: #fff;
   height: 2px;
   margin-bottom: 61px;
