@@ -18,10 +18,33 @@ h1, h2, h3{
 }
 ul, li {
     list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 .container{
     width: 1440px;
     margin: 0 auto;
+}
+button{
+    background-color: transparent;
+    padding: 0;
+    color: #fff;
+    border: none;
+}
+.button{
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 7px;
+    text-transform: uppercase;
+}
+.button::before{
+    content: "";
+    display: inline-block;
+    height: 2px;
+    width: 65px;
+    background-color: #fff;
+    margin-right: 30px;
+    vertical-align: middle;
 }
 .preview{
     background-color: #000000;
@@ -142,4 +165,60 @@ ul, li {
 }
 .statistics__text{
     font-size: 24px;
+}
+/* PLAN */
+.plan{
+    padding: 92px 0 120px;
+    background-color: #1a1a1a;
+}
+.plan__content{
+    text-align: center;
+    margin-bottom: 84px;
+}
+.plan__subtitle{
+    font-size: 18px; 
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+.plan__title{
+    font-family: "Montserrat", sans-serif;
+    font-size: 40px;
+    line-height: 56px;
+    text-align: center;
+}
+.plan__list{
+    display: flex;
+    border-top: 1px solid #ffffff;
+    border-bottom: 1px solid #ffffff;
+}
+.plan__item{
+    flex: 1;
+    border-right: 1px solid #ffffff;
+    padding: 60px 30px;
+}
+.plan__item:first-child{
+    border-left: 1px solid #ffffff;
+}
+.plan__item-title{
+    font-family: "Montserrat", sans-serif;
+    font-size: 34px;
+    margin-bottom: 27px;
+}
+.plan__item-list{}
+.plan__item-name{
+    font-size: 14px;
+    line-height: 64px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
+.plan__item-cost{
+    font-family: "Montserrat", sans-serif;
+    font-size: 34px;
+    line-height: 51px;
+    text-align: right;
+    margin-bottom: 20px;
+}
+.lan__item-button{
+    text-align: right;
 }
