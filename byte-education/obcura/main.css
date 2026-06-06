@@ -56,3 +56,61 @@ h1, h2, h3{
     line-height: 24px;
     padding-right: 42px;
 }
+/* ABOUT ME */
+.about-me{
+    background-color: #1a1a1a;
+}
+.about-me .container{
+    position: relative;
+    padding: 120px 0 96px;
+}
+.about-me__content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 2;
+    position: relative;
+}
+.about-me__avatar{
+    margin-bottom: 50px;
+}
+.about-me__section-title{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 240px;
+    color: #6236ff;
+    mix-blend-mode: normal;
+    opacity: 0.3;
+
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 25px;
+
+    white-space: nowrap;
+    z-index: 1;
+
+}
+.avatar{
+    height: 280px;
+    width: 280px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.avatar__icon{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.about-me__name{
+    font-size: 18px;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+.about-me__text{
+    font-size: 15px;
+    line-height: 24px;
+    max-width: 450px;
+    text-align: center;
+}
