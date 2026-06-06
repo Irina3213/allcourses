@@ -4,6 +4,8 @@
 body, html {
     height: 100%;
     width: 100%;
+    font-family: "Source Sans 3", sans-serif;
+    background-color: #000000;
 }
 p{
     margin: 0;
@@ -11,3 +13,13 @@ p{
 h1, h2, h3{
     margin: 0;
 }
+.preview{}
+.preview__left{}
+.header{}
+.header{}
+.logo__link{}
+.logo__icon{}
+.preview__content{}
+.preview__subtitle{}
+.preview__title{}
+.preview__text{}
