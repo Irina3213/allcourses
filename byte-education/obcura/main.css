@@ -16,6 +16,9 @@ h1, h2, h3{
     margin: 0;
     font-weight: 400;
 }
+ul, li {
+    list-style-type: none;
+}
 .container{
     width: 1440px;
     margin: 0 auto;
@@ -113,4 +116,30 @@ h1, h2, h3{
     line-height: 24px;
     max-width: 450px;
     text-align: center;
+}
+/* STATISTICS */
+.statistics{
+    padding: 122px 0 125px;
+    background-image: url("./images/containter.png") center center no-repeat;
+    background-size: cover;
+}
+.statistics__content{}
+.statistics__list{
+    display: flex;
+    justify-content: center;
+}
+.statistics__item{
+    text-align: center;
+    margin-right: 100px;
+}
+.statistics__item:last-child{
+    margin-right: 0;
+}
+.statistics__value{
+    font-family: "Montserrat", sans-serif;
+    font-size: 80px;
+    margin-bottom: 14px;
+}
+.statistics__text{
+    font-size: 24px;
 }
