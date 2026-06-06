@@ -6,20 +6,53 @@ body, html {
     width: 100%;
     font-family: "Source Sans 3", sans-serif;
     background-color: #000000;
+    color: #ffffff;
+    font-weight: 400;
 }
 p{
     margin: 0;
 }
 h1, h2, h3{
     margin: 0;
+    font-weight: 400;
 }
-.preview{}
-.preview__left{}
-.header{}
-.header{}
+.container{
+    width: 1440px;
+    margin: 0 auto;
+}
+.preview{
+    background-color: #000000;
+
+}
+.preview .container{
+    display: flex;
+}
+.preview__left{
+    padding-top: 26px;
+}
+.header{
+    margin-bottom: 154px;
+}
 .logo__link{}
 .logo__icon{}
-.preview__content{}
-.preview__subtitle{}
-.preview__title{}
-.preview__text{}
+.preview__content{
+    max-width: 500px;
+}
+.preview__subtitle{
+    font-size: 18px;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+.preview__title{
+    font-size: 48px;
+    font-family: "Montserrat", sans-serif;
+    line-height: 56px;
+    margin-bottom: 30px;
+
+}
+.preview__text{
+    font-size: 15px;
+    line-height: 24px;
+    padding-right: 42px;
+}
